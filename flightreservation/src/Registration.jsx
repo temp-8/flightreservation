@@ -39,7 +39,7 @@ function Registration() {
         </div>
     </div>
     {/* <h1>{user}</h1> */}
-    {/* <h1>{JSON.stringify(user)}</h1> */}
+    <h1>{JSON.stringify(user)}</h1>
 
     </div>
   )
