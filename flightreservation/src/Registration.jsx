@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 
 function Registration() {
-    const [user,setuser]=useState({Name:"",
-            email:"",
-            phone:0,
-            address:"",
-            password:""})
-  return (
+    // const [user,setuser]=useState({Name:"",
+    //         email:"",
+    //         phone:0,
+    //         address:"",
+    //         password:""})
+    const [flag,setflag]=useState(0)
+    return (
     <div>
        <div class="backgroundimage2">
         <div class="registration-container">
@@ -34,12 +35,17 @@ function Registration() {
 
                
 
-                <button type="submit">Register</button>
+                <button type="button" onClick={()=>setflag(1)}>Register</button>
+                {flag==1 && (
+                  <div>
+                    
+                  </div>
+                )}
             </form>
         </div>
     </div>
     {/* <h1>{user}</h1> */}
-    <h1>{JSON.stringify(user)}</h1>
+    {/* <h1>{JSON.stringify(user)}</h1> */}
 
     </div>
   )

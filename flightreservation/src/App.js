@@ -6,12 +6,13 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Registration from './Registration';
 import Login from './Login';
 import Footer from './Footer';
+import Sample from './Sample';
 
 
 function App() {
   return (
     <div className="App">
-     <Router>
+     {/* <Router>
       <Nav/>
       <Routes>
         <Route path="/" element={<Home/>} />
@@ -19,7 +20,8 @@ function App() {
         <Route path="/login"  element={<Login/>}/>
       </Routes>
       <Footer/>
-     </Router>
+     </Router> */}
+     <Sample/>
     </div>
   );
 }
